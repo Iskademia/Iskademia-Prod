@@ -1,0 +1,321 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dashboard</title>
+    <link rel="icon" href={% static '/images/ISKAdemia-Logo-icon-2.png' %}/>
+    <link rel="stylesheet" href={% static '/css/dashboard.css' %}>
+  </head>
+
+  <body>
+    <div class="side-nav">
+      <div class="logo">
+        <img src={% static '/images/ISKAdemia-Logo-icon-2.png' %} alt="Logo" />
+
+        <p>ISKAdemia</p>
+      </div>
+
+      <div class="profile">
+        <div class="round">
+          <img src={% static '/images/profile-icon.jpg' %} alt="Profile" />
+        </div>
+        <p>Profile</p>
+      </div>
+
+      <div class="dashboard">
+        <div class="round">
+          <img src={% static "/images/dashboard-icon.svg" %} alt="Dashboard" />
+        </div>
+        <p>Dashboard</p>
+      </div>
+
+      <div class="courses">
+        <div class="round">
+          <img src={% static '/images/courses-icon.svg' %} alt="Courses" />
+        </div>
+        <p>Courses</p>
+      </div>
+
+      <div class="groups">
+        <div class="round">
+          <img src={% static '/images/group-icon.svg' %} alt="Groups" />
+        </div>
+        <p>Groups</p>
+      </div>
+
+      <div class="conference">
+        <div class="round">
+          <img src={% static '/images/conference-icon.svg' %} alt="Conference"
+          />
+        </div>
+        <p>Conference</p>
+      </div>
+
+      <div class="calendar">
+        <div class="round">
+          <img src= {% static '/images/calendar-icon.svg' %} alt="Calendar" />
+        </div>
+        <p>Calendar</p>
+      </div>
+
+      <div class="grades">
+        <div class="round">
+          <img src= {% static '/images/grades-icon.svg' %} alt="Grades" />
+        </div>
+        <p>Grades</p>
+      </div>
+
+      <div class="settings">
+        <div class="round">
+          <img src= {% static '/images/settings-icon.svg' %} alt="Settings" />
+        </div>
+        <p>Settings</p>
+      </div>
+    </div>
+
+    <div class="main-container">
+      <div class="header">
+        <span id="title">Dashboard</span>
+
+        <div class="header-right">
+          <div class="search">
+            <img src={% static '/images/search-icon-2.svg' %} alt="Search" />
+            <span>Search</span>
+          </div>
+          <a href="#">Feedback</a>
+          <a href="#">About</a>
+          <a href="#">Contact us</a>
+        </div>
+      </div>
+
+      <div class="notification">
+        <div class="outside-container">
+          <img src={% static '/images/subjects-icon.svg' %} alt="Subjects Today"
+          />
+          <div class="inner-container">
+            <p>3</p>
+            <hr />
+            <p>Subjects Today</p>
+          </div>
+        </div>
+
+        <div class="outside-container">
+          <img src={% static '/images/task-icon.svg' %} alt="Task" />
+          <div class="inner-container">
+            <p>1</p>
+            <hr />
+            <p>Task</p>
+          </div>
+        </div>
+
+        <div class="outside-container">
+          <img src={% static '/images/message-icon.svg' %} alt="Messages" />
+          <div class="inner-container">
+            <p>5</p>
+            <hr />
+            <p>Messages</p>
+          </div>
+        </div>
+
+        <div class="outside-container">
+          <img src={% static '/images/event-icon.svg' %} alt="Events" />
+          <div class="inner-container">
+            <p>2</p>
+            <hr />
+            <p>Events</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="announcements">
+        <div>
+          <img src={% static "/images/announcement-icon.png" %}
+          alt="Announcement" />
+          <p>Announcements</p>
+        </div>
+
+        <ul>
+          <li>
+            <a href="#">Ma'am Fajardo posted an assigment</a>
+            <p class="announcement-time">5 hours ago</p>
+          </li>
+
+          <li>
+            <a href="#">Ma'am Fajardo posted an assigment</a>
+            <p class="announcement-time">5 hours ago</p>
+          </li>
+
+          <li>
+            <a href="#">Ma'am Fajardo posted an assigment</a>
+            <p class="announcement-time">5 hours ago</p>
+          </li>
+
+          <li>
+            <a href="#">Ma'am Fajardo posted an assigment</a>
+            <p class="announcement-time">5 hours ago</p>
+          </li>
+        </ul>
+      </div>
+
+      <div class="recent-activity">
+        <div class="recent-activity-title">
+          <img src={% static "/images/recent-files-icon.svg" %} alt="Recent
+          Files" />
+          <p>Recent Activity</p>
+        </div>
+
+        <div class="vertical-line"></div>
+
+        <div class="activity">
+          <img src={% static '/images/check-icon.svg' %} alt="Check" />
+          <div>
+            <p class="activity-txt">You completed a Quiz</p>
+            <p class="activity-description">
+              Lorem ipsum Lorem Ipsum Lorem ipsum Lorem Ipsum
+            </p>
+            <p class="activity-time">5 hours ago</p>
+          </div>
+        </div>
+
+        <div class="activity">
+          <img src={% static '/images/check-icon.svg' %} alt="Check" />
+          <div>
+            <p class="activity-txt">You completed a Quiz</p>
+            <p class="activity-description">
+              Lorem ipsum Lorem Ipsum Lorem ipsum Lorem Ipsum
+            </p>
+            <p class="activity-time">5 hours ago</p>
+          </div>
+        </div>
+
+        <div class="activity">
+          <img src={% static '/images/check-icon.svg' %} alt="Check" />
+          <div>
+            <p class="activity-txt">You completed a Quiz</p>
+            <p class="activity-description">
+              Lorem ipsum Lorem Ipsum Lorem ipsum Lorem Ipsum
+            </p>
+            <p class="activity-time">5 hours ago</p>
+          </div>
+        </div>
+
+        <div class="activity">
+          <img src={% static '/images/check-icon.svg' %} alt="Check" />
+          <div>
+            <p class="activity-txt">You completed a Quiz</p>
+            <p class="activity-description">
+              Lorem ipsum Lorem Ipsum Lorem ipsum Lorem Ipsum
+            </p>
+            <p class="activity-time">5 hours ago</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="activity-summary">
+        <img src= {% static "/images/activity-summary-chart.png" %}
+        alt="Activity Summary" />
+      </div>
+
+      <div class="data-usage">
+        <img src={% static '/images/data-usage-chart.png' %} alt="Data Usage" />
+      </div>
+
+      <div class="third-section">
+        <div class="recently-uploaded-files">
+          <div>
+            <img src={% static '/images/files-icon.svg' %} alt="File" />
+            <p>Recently Uploaded Files</p>
+          </div>
+
+          <table>
+            <tr>
+              <td></td>
+              <th>File Name</th>
+              <th>Date Uploaded</th>
+              <th>Subject</th>
+            </tr>
+
+            <tr>
+              <td><img src={% static '/images/pdf-file.svg' %} alt="PDF" /></td>
+              <td>anyname.pdf</td>
+              <td>10/11/2020</td>
+              <td>PE</td>
+            </tr>
+            <tr>
+              <td><img src={% static '/images/pdf-file.svg' %} alt="PDF" /></td>
+              <td>anyname.pdf</td>
+              <td>10/11/2020</td>
+              <td>PE</td>
+            </tr>
+            <tr>
+              <td><img src={% static '/images/pdf-file.svg' %} alt="PDF" /></td>
+              <td>anyname.pdf</td>
+              <td>10/11/2020</td>
+              <td>PE</td>
+            </tr>
+            <tr>
+              <td><img src={% static '/images/pdf-file.svg' %} alt="PDF" /></td>
+              <td>anyname.pdf</td>
+              <td>10/11/2020</td>
+              <td>PE</td>
+            </tr>
+            <tr>
+              <td><img src={% static '/images/pdf-file.svg' %} alt="PDF" /></td>
+              <td>anyname.pdf</td>
+              <td>10/11/2020</td>
+              <td>PE</td>
+            </tr>
+            <tr>
+              <td><img src={% static '/images/pdf-file.svg' %} alt="PDF" /></td>
+              <td>anyname.pdf</td>
+              <td>10/11/2020</td>
+              <td>PE</td>
+            </tr>
+            <tr>
+              <td><img src={% static '/images/pdf-file.svg' %} alt="PDF" /></td>
+              <td>anyname.pdf</td>
+              <td>10/11/2020</td>
+              <td>PE</td>
+            </tr>
+            <tr>
+              <td><img src={% static '/images/pdf-file.svg' %} alt="PDF" /></td>
+              <td>anyname.pdf</td>
+              <td>10/11/2020</td>
+              <td>PE</td>
+            </tr>
+            <tr>
+              <td><img src={% static '/images/pdf-file.svg' %} alt="PDF" /></td>
+              <td>anyname.pdf</td>
+              <td>10/11/2020</td>
+              <td>PE</td>
+            </tr>
+            <tr>
+              <td><img src={% static '/images/pdf-file.svg' %} alt="PDF" /></td>
+              <td>anyname.pdf</td>
+              <td>10/11/2020</td>
+              <td>PE</td>
+            </tr>
+          </table>
+        </div>
+
+        <div class="dashboard-calendar">
+          <div>
+            <img src={% static '/images/calendar-icon.svg' %} alt="Calendar
+            Icon" />
+            <p>Calendar - January 2020</p>
+          </div>
+          <img src={% static '/images/calendar-sample.png' %} alt="Calendar
+          Sample" />
+        </div>
+      </div>
+    </div>
+
+    <footer>
+      <span>Copyright © ISKAdemia 2020</span>
+      <span class="footer-right privacy"><a href="#">Privacy Policy</a></span>
+      <span class="footer-right terms"><a href="#">Terms & Conditions</a></span>
+    </footer>
+  </body>
+</html>

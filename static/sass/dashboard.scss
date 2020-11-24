@@ -26,8 +26,9 @@ $modifiedBlack:#242423;
     flex-direction: column;
     float: left;
     width: 5.8%;
-    height: 100%;
+    height: 100vh;
     justify-content: center;
+    align-items: center;
     text-align: center;
     background-color: $sideNavBorderColor;
     color: $sideNavFontColor;
@@ -71,6 +72,7 @@ body{
         }
         .logo{
             margin: -5px auto 5px auto;
+
             img{
                 height: 60px; width: 50px;
             }
@@ -95,11 +97,9 @@ body{
     }//side nav
 
     .main-container{
-
-            margin-left: 8%;
-            margin-right: 5rem;
-
-        .header{
+            margin: 0 6% 0 8%;
+        
+            .header{
             position: relative;
             padding: 1.5em 0 1em 0;
             width: 100%;
@@ -113,32 +113,7 @@ body{
                 display: flex;
                 float: right;
                 font-size: 1rem!important;
-                
-
-                // .search{
-                //     position: relative;
-                //     display: flex; 
-                //     margin: 0 1rem;
-                //     max-width: 120px;
-                //     border-radius: 50px;
-                //     border: 1px solid $modifiedBlack;  overflow: hidden;
-
-                //     div { 
-                //         position: absolute;
-                //         left: 0%;
-                //         img{
-                //             padding: .5em .3em .5em .5em;
-                //             margin-right: 1em;
-                //         }    
-                //     }
-                //    input[type=text]{
-                //        border-radius: 50px; border: none;
-                //        margin-left: 35px;
-                //        font-size: 16px; padding: .5em 0;    
-                //     }
-                //    // input[type=text]:active{border: none;}
-                // }
-                
+            
                 div{
                     padding-bottom: .5em; padding-top: .5em;
                     
@@ -220,59 +195,44 @@ body{
 
         .notification{
             display: flex;
-            width: -webkit-max-content;
-            width: -moz-max-content;
-            width: max-content;
-            margin-right: 0%;
+            justify-content: stretch;
+            width: 72%;
+         
 
-            .outside-container{
-                position: relative;
-                width: 193px; height: 150px;
-                margin: .5em 1.4em 0 0;
-
-                img{ position: absolute; -webkit-filter: drop-shadow(-3px 3px 3px rgba(0, 0, 0, 0.25)); filter: drop-shadow(-3px 3px 3px rgba(0, 0, 0, 0.25)); right: 0%; top: -5%;}
-
-                .subjects-icon{
-                    
-                    width: 40px; height: 40px; 
-                    transform: matrix(0.95, 0.38, -0.31, 0.93, 0, 0);  
-                    }
-
-                .message-icon{
-                    width: 37px; height: 37px;
-                    transform: matrix(0.82, 0.61, -0.54, 0.81, 0, 0); 
-                }
-
-                .task-icon{
-                    top: -10%; right: -3%;
-                    transform: matrix(0.71, -0.79, 0.63, 0.71, 0, 0);
-                    width: 60px; height: 50px;
-                }
-
-                .event-icon{ width: 50px; height: 50px; top: -10%; right: -5%;}
-                .inner-container{
+               .inner-container{
+                   position: relative;
                     @include containerDesign();
-                    width: 180px; height: 137px; 
-                   
-                    p:nth-child(1){
+                    width: 25%; height: 137px; 
+                    margin: .5em 3.35% .8em 0;
+                    
+                    img{ position: absolute; height: 30px; width: 30px;  filter: drop-shadow(-2px 2px 4px rgba(18, 114, 39, .50));}
+
+                    .subject-icon{ right: -2%;}
+                    
+                    .task-icon{ right: -3%; top: -3%; transform: rotate(-45deg);}
+
+                    .event-icon{ right: -5%; top: -5%;}
+
+                    .message-icon{ top: -2%; right: 0;}
+
+                    p:nth-child(2){
                         font-size: 64px;
                         margin: .2em auto;
                     }//number text
 
                     hr{ margin: 0 0 5px 4px; width: 95%;}
 
-                    p:nth-child(2){
+                    p:nth-child(3){
                         margin-bottom: -10px!important;
                     }//label inside the container
                 }//inner container
-            }
-        }
+            .inner-container:nth-child(4){ margin-right: 0;}
+        }//notifications
 
         .announcements{
             @include containerDesign();
             position: absolute;
-            right: 7%;
-            top: 14%;
+            right: 7%; top: 93px;
             width: 21%;
             padding: .5em 2.5em;
 
@@ -298,7 +258,7 @@ body{
 
         .recent-activity{
             position: absolute;
-            right: 7%; top: 64%;
+            right: 7%; top: 420px;
             width: 21%;
             height: 70%;
             @include containerDesign();
@@ -350,22 +310,32 @@ body{
 
         }//recent activity
 
-        .activity-summary, .data-usage{
-            max-width: 830px;
-            @include containerDesign();
-            margin: .2em 0 15px 5px;
-        }
 
+        .graph{
+           display: flex;
+           flex-direction: column; 
+           justify-content: center;
+           
+           .activity-summary, .data-usage{
+            @include containerDesign();
+            margin:0 0 .8rem 0;
+            width: 72%;
+
+        }
+        
         .data-usage{
             padding-top: 20px;
         }
+        }
+        
+
 
         .third-section{
-            display: flex; margin-bottom: 5rem;
+            display: flex; margin: 0; margin-bottom: 5rem;;
 
             .recently-uploaded-files{
                 @include containerDesign();
-                margin-left: 5px; padding: 0 1em 1em 1em;
+                margin-left: 0; margin-right: 2%; padding: 0 1em 1em 1em;
                 width: 32%;
                 div{
                     display: flex; justify-content: center;
@@ -387,27 +357,31 @@ body{
                     width: 20px; height: 20px;
                 }
             }
-    
+            .dashboard-calendar{
+                @include containerDesign();
+                width: 38%;
+                margin-left: 0;
+                div{
+                    display: flex; justify-content: center;
+                    padding: 1.5em 0 .5em 0;
+                    img{ width: 20px; height: 20px; margin-right: 1rem;}
+                    p{ font-size: 18px;}
+                }
         }
         
-        .dashboard-calendar{
-            @include containerDesign();
-            max-width: 38%;
-            margin-left: -19rem;
-            div{
-                display: flex; justify-content: center;
-                padding: 1.5em 0 .5em 0;
-                img{ width: 20px; height: 20px; margin-right: 1rem;}
-                p{ font-size: 18px;}
-            }
+      
             
         }
+
         .dashboard-calendar > img{
            padding-top: 1rem; max-width: 90%; max-height: 90%;
          }
 
     }//main container
 
+    
+    
+    
     footer{
         font-size: 14px;
         clear: both;

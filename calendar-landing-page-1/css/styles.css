@@ -1,0 +1,221 @@
+/* import*/
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400&display=swap');
+
+*{
+     box-sizing: border-box;
+     margin: 0;
+     padding: 0;
+     list-style: none;
+     font-family: "Montserrat", sans-serif;
+     font-size: 12pt;
+}
+
+:root{
+     --color-1: #005c57;
+     --color-1-hover: rgb(0, 92, 87, 0.4);
+     --color-1-active: rgba(0, 92, 87, 0.6);
+     --color-2: #ffffff;
+     --color-3: #000000;
+     --small: .9em;
+     --medium: 1.25em;
+     --large: 1.5em;
+     --xlarge: 2em;
+}    
+
+/*font sizes and weights*/
+.small{
+     font-size: .9em;
+}
+
+.medium{
+     font-size: 1.25em;
+}
+
+.large{
+     font-size: 1.5em;
+}
+
+.xlarge{
+     font-size: 2em;
+}
+
+.lightfont{
+     font-weight: 300;
+}
+
+/*text-alignment*/
+.text-center{
+     text-align: center;
+}
+
+/*header*/
+header{
+     display: flex;
+     flex-flow: column;
+     height: 1024px;
+     width: 90px;
+     padding: 5px;
+     background-color: var(--color-1);
+     text-align: center;
+}
+
+.navigation-items{
+     color: var(--color-2);
+     text-decoration: none;
+}
+
+header > nav ul li{
+     margin-bottom: 5px;
+}
+
+header > nav ul li:hover{
+     text-decoration: underline;
+}
+
+header > nav ul li:active{
+     cursor: wait;
+}
+
+.eclipse{
+     display: block;
+     margin: 0 auto;
+     width: 50px;
+     height: 50px;
+     margin-bottom: 1px;
+     background-color: var(--color-2);
+     border-radius: 50%;
+}
+
+/*main content*/
+main{
+     display: flex;
+     flex-flow: column;
+     position: absolute;
+     top: 0;
+     left: 90px;
+     width: 1200px;
+}
+
+/*top*/
+.top{
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+}
+
+.top button{
+     width: 120px;
+     height: 30px;
+     border: none;
+     border-radius: 15px;
+     background-color: transparent;
+}
+
+.top button:hover{
+     background-color: var(--color-1-hover);
+}
+
+.top button:active{
+     background-color: var(--color-1-active);
+     cursor: wait;
+}
+
+.view-selector{
+     color: var(--color-3);
+     text-decoration: none;
+}
+
+.view-selector:active{
+     color: var(--color-2);
+}
+
+/*table*/
+.table{
+     display: block;
+     margin: 30px auto;
+}
+
+.table ul{
+     margin-bottom: 10px;
+}
+
+.table ul li{
+     display: inline;
+     margin-bottom: 10px;
+}
+
+.table table, td{
+     border: 1px solid;
+     border-collapse: collapse;
+}
+
+td{
+     width: 160px;
+     height: 160px;
+     padding: 5px;
+     vertical-align: top;
+}
+
+.lg-weeks-ctnr{
+     height: 40px;
+     vertical-align: middle;
+     text-align: center;
+}
+
+.lg-dates-ctnr:hover{
+     background-color: var(--color-1-hover);
+}
+
+/*side content--general*/
+.side-content{
+     position: absolute;
+     top: 0;
+     left: 1200px;
+}
+
+.reminders, .calendar-list, .small-calendar{
+     width: 260px;
+     height: auto;
+     margin: 20px 0;
+     padding: 10px;
+     border: 1px solid;
+}
+
+.sc-link{
+     text-decoration: none;
+}
+
+.sc-link:hover{
+     cursor: pointer;
+}
+
+/*reminders*/
+.reminders dl dt div{
+     display: inline;
+}
+
+/*calendar list*/
+.calendar-list ul li div{
+     display: inline;
+}
+
+/*small calendar*/
+
+.small-calendar table{
+     border-collapse: collapse;
+}
+
+.small-calendar .sm-weeks-ctnr{
+     background-color: transparent;
+     color: var(--color-3);
+}
+
+.small-calendar td{
+     width: 30px;
+     height: 30px;
+     text-align: center;
+     border: 1px solid var(--color-2);
+     background-color: var(--color-1-active);
+     color: var(--color-2);
+     font-size: var(--small);
+}

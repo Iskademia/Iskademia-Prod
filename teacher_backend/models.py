@@ -6,7 +6,7 @@ from student_backend.models import *
 
 class ProfessProfile(models.Model):
     GENDER = (
-        ("M", "Male"),
+        ("M", "Male"), 
         ("F", "Female"),
     )
 

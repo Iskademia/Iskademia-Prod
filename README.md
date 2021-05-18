@@ -1,4 +1,5 @@
-# lms_backend
+# LMS-Project
+
 
 Create a virtual env then install the requirements.txt
 

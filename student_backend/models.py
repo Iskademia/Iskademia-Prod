@@ -46,3 +46,7 @@ class StudGrades(models.Model):
 # relations to all the upcoming assignments, quizz, and activities
 class Reminder(models.Model):
     reminders = models.ForeignKey(Schoolworks, on_delete=models.SET_NULL, null=True)
+
+
+
+
